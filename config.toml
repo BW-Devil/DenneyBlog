@@ -66,6 +66,8 @@ defaultContentLanguageInSubdir = true
 
   showMenuLanguages = true
 
+  customFavicon = "images/taichi01.png"
+
   autoLoadComments = false # auto load comment when scrolling down
 
   # paginate style, default use numbered pagination links
