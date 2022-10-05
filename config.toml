@@ -1,7 +1,7 @@
 # ------------------------------------- #
 # ---- General Settings --------------- #
 # ------------------------------------- #
-baseURL = "https://bw-blog.pages.dev"
+baseURL = "https://bwfish.top"
 title = "Den"
 theme = "hugo-theme-den"
 #enableRobotsTXT = true       # generate robots.txt
