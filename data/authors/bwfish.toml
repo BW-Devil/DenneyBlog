@@ -1,13 +1,13 @@
-url = "https://example.com"
+url = "https://bwfish.xyz"
 
 [name]
 display = "BWFish"
 
 [image]
-# url = ""
+url = "images/cat01.jpg"
 
-[zh-tw]
-description = "自我簡介。"
+[zh-cn]
+description = "自我介绍"
 
 [en]
 description = "Self introduction."

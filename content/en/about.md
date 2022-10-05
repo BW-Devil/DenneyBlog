@@ -6,14 +6,10 @@ menu: "main"
 weight: 50
 ---
 
-Hugo is a static site engine written in Go.
+🍓Introduction  
+🥕Heart to heart, static line to far. Hello, friend!🤝  
+🥕This is my knowledge base, but also a private tree hole  
 
-
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+🍉Self-Introduction  
+🌱Status: university student majoring in computer science  
+🌱Hobbies: computer | Mixed Martial Arts | meditation | Music...  
