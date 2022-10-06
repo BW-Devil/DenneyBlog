@@ -52,7 +52,7 @@ defaultContentLanguageInSubdir = true
 # ------------------------------------- #
 
 [params]
-  since = "2017"             # Site creation time
+  since = "2019"             # Site creation time
   rssFullContent = true      # set true to use full content instead of summary
 
   # site info (optional)
@@ -124,11 +124,12 @@ defaultContentLanguageInSubdir = true
     weight = 10
     identifier = "notes"
     url = "category/notes/"
+	
   [[languages.en.menu.main]]
-    name = "Demos"
+    name = "think"
     weight = 20
-    identifier = "demos"
-    url = "category/demos/"
+    identifier = "think"
+    url = "category/think/"
 
   [[languages.en.menu.social]]
     name = "Twitter"
@@ -156,11 +157,12 @@ defaultContentLanguageInSubdir = true
     weight = 10
     identifier = "notes"
     url = "category/notes/"
+	
   [[languages.zh-cn.menu.main]]
-    name = "展示"
+    name = "思索"
     weight = 20
-    identifier = "demos"
-    url = "category/demos/"
+    identifier = "think"
+    url = "category/think/"
 
   [[languages.zh-cn.menu.social]]
     name = "Twitter"
