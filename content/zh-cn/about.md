@@ -6,6 +6,8 @@ menu: "main"
 weight: 50
 ---
 
+---
+
 🍓 **简介**
 
 🥕 唯心相交，静行致远。你好，朋友！🤝  
@@ -34,5 +36,12 @@ weight: 50
 
 :leaves: 2022.10：服务器快到期，不想续了，使用Github+Cloudflare-Page的方式搭建Hugo静态博客
 
+---
 
+:cherry_blossom: **联系方式**
 
+:four_leaf_clover: Gmail： weunknowing@gmail.com
+
+:four_leaf_clover: Telegram：[@bwfish](https://t.me/bwfish)
+
+---

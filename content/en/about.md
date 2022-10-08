@@ -6,6 +6,8 @@ menu: "main"
 weight: 50
 ---
 
+---
+
 🍓 **Introduction**  
 
 🥕 Heart to heart, static line to far. Hello, friend!🤝  
@@ -33,3 +35,13 @@ weight: 50
 :leaves: 2021.11：Want to make a theme, but pit too much, ditch Typecho and move on to the Halo blog
 
 :leaves: 2022.10：The server is about to expire and I don't want to renew it，try building Hugo's static blog using Github+Cloudflare-page's approach
+
+---
+
+:cherry_blossom: **Contact information**
+
+:four_leaf_clover: Gmail： weunknowing@gmail.com
+
+:four_leaf_clover: Telegram：[@bwfish](https://t.me/bwfish)
+
+---
