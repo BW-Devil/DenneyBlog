@@ -142,6 +142,12 @@ defaultContentLanguageInSubdir = true
     weight = 10
     identifier = "twitter"
     url = "https://twitter.com/Tomtree_Johnson"
+	
+  [[languages.en.menu.social]]
+    name = "Gmail"
+    weight = 20
+    identifier = "gmail"
+    url = "weunknowing@gmail.com"
 
   [[languages.en.menu.links]]
     name = "GitHub"
@@ -181,6 +187,12 @@ defaultContentLanguageInSubdir = true
     weight = 10
     identifier = "twitter"
     url = "https://twitter.com/Tomtree_Johnson"
+	
+  [[languages.zh-cn.menu.social]]
+    name = "Gmail"
+    weight = 20
+    identifier = "gmail"
+    url = "weunknowing@gmail.com"
 
   [[languages.zh-cn.menu.links]]
     name = "GitHub"
