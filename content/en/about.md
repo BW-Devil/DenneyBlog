@@ -28,8 +28,8 @@ weight: 50
 
 :leaves: 2020.10：Since CSDN can not customize the theme, start trying the blog garden
 
-:leaves: 2021.06：The blog Garden's built-in article module was so bad that I decided to use pagoda's built-in Z-blog system
+:leaves: 2021.06：The blog Garden's built-in article module was so bad that I decided to use Typecho system
 
-:leaves: 2021.11：The server configuration was so bad that I gave up z-blog and tried to build the Halo blog system using Docker
+:leaves: 2021.11：Want to make a theme, but pit too much, ditch Typecho and move on to the Halo blog
 
 :leaves: 2022.10：The server is about to expire and I don't want to renew it，try building Hugo's static blog using Github+Cloudflare-page's approach

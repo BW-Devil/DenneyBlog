@@ -5,5 +5,3 @@ menu: "main"
 weight: 40
 ---
 
-### hello
-

@@ -24,15 +24,15 @@ weight: 50
 
 :maple_leaf: **博客变迁史**  
 
-:leaves: 2019.11：开通CSDN博客，尝试写博客  
+:leaves: 2019.11：开通CSDN博客，尝试写博客
 
 :leaves: 2020.10：因CSDN不能自定义主题，开始尝试博客园
 
-:leaves: 2021.06：博客园自带的写文章模组实在拉跨，决定使用宝塔自建Z-blog博客系统
+:leaves: 2021.06：博客园自带的写文章模组实在拉跨，决定自建Typecho博客
 
-:leaves: 2021.11：购买的服务器配置太差，运行z-blog太卡，尝试使用Docker搭建Halo博客系统
+:leaves: 2021.11：想自己写主题，但坑太多，弃Typecho，转向使用Halo博客
 
-:leaves: 2022.10：服务器快到期，不想续了，转向Github+Cloudflare-Page的方式搭建Hugo静态博客
+:leaves: 2022.10：服务器快到期，不想续了，使用Github+Cloudflare-Page的方式搭建Hugo静态博客
 
 
 

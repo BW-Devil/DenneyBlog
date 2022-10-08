@@ -131,6 +131,12 @@ defaultContentLanguageInSubdir = true
     identifier = "think"
     url = "category/think/"
 
+  [[languages.en.menu.main]]
+    name = "life"
+    weight = 30
+    identifier = "life"
+    url = "category/life/"
+
   [[languages.en.menu.social]]
     name = "Twitter"
     weight = 10
@@ -163,6 +169,12 @@ defaultContentLanguageInSubdir = true
     weight = 20
     identifier = "think"
     url = "category/think/"
+	
+  [[languages.zh-cn.menu.main]]
+    name = "生活"
+    weight = 30
+    identifier = "life"
+    url = "category/life/"
 
   [[languages.zh-cn.menu.social]]
     name = "Twitter"
