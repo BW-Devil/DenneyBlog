@@ -148,6 +148,12 @@ defaultContentLanguageInSubdir = true
     weight = 10
     identifier = "github"
     url = "https://github.com/BW-Devil/"
+	
+  [[languages.en.menu.links]]
+    name = "语雀"
+    weight = 20
+    identifier = "yuque"
+    url = "https://www.yuque.com/bwfish"
 
 [languages.zh-cn]
   languageCode = "zh-cn"
@@ -187,3 +193,9 @@ defaultContentLanguageInSubdir = true
     weight = 10
     identifier = "github"
     url = "https://github.com/BW-Devil/"
+	
+  [[languages.zh-cn.menu.links]]
+    name = "语雀"
+    weight = 20
+    identifier = "yuque"
+    url = "https://www.yuque.com/bwfish"
