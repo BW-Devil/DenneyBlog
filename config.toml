@@ -1,7 +1,7 @@
 # ------------------------------------- #
 # ---- General Settings --------------- #
 # ------------------------------------- #
-baseURL = "https://bwfish.top"
+baseURL = "https://www.bwfish.top"
 title = "BWFish"
 theme = "hugo-theme-den"
 #enableRobotsTXT = true       # generate robots.txt
