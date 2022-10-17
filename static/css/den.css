@@ -526,7 +526,8 @@ blockquote{
   margin-top: 40px;
 }
 .comment-underline {
-  display: inline-block;
+  /* display: inline-block; */
+  display: block;
   margin-top: 10px;
   margin-bottom: 15px;
   width: 50px;
