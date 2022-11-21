@@ -5,7 +5,7 @@ draft: false
 categories: ["notes"]
 tags: ["record"]
 authors:
-- "BWFish"
+- "bwfish"
 ---
 
 ### 前言
