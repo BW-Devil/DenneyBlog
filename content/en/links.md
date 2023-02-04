@@ -10,7 +10,7 @@ rss_ignore: true
 
 <div class="flink" id="article-container">
 	<div class="friend-list-div">
-    	{{< friend name="CJJ" url="http://www.cjjblog.top/" logo="http://www.cjjblog.top/images/site/avatar.jpg" word="我啥也没写，想看到什么自己脑补~~~" >}}
+    	{{< friend name="CJJ" url="http://www.cjjblog.top/" logo="https://s2.loli.net/2023/02/04/wyAzhcxG3UQ2NDP.jpg" word="我啥也没写，想看到什么自己脑补~~~" >}}
 	</div>
 </div>
 
