@@ -3,11 +3,16 @@ title: "Links"
 date: 2022-10-05T20:23:11+08:00
 menu: "main"
 weight: 40
+rss_ignore: true
 ---
 
 ## :star: Friends
 
-:heartbeat:Vacant:heartbeat:
+<div class="flink" id="article-container">
+	<div class="friend-list-div">
+    	{{< friend name="CJJ" url="http://www.cjjblog.top/" logo="http://www.cjjblog.top/images/site/avatar.jpg" word="我啥也没写，想看到什么自己脑补~~~" >}}
+	</div>
+</div>
 
 ## :whale:Hi
 
