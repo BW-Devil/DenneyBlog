@@ -3,6 +3,7 @@ languageCode = 'en-us'
 theme = "JuiceBar"
 title = "Denney's Blog"
 
+
 [params]
 author = "Y3un9vj"
 description = "My site description"
@@ -11,6 +12,7 @@ paginate = 5
 Title = "Y3un9vj"
 content = "I'm Denney, nice to meet you(ˊ˘ˋ*)♡"
 imageUrl = "/images/profile.jpg"
+favicon = "/images/favicon.ico"
 
 # To add a new social icon 
 # More social icons can be found in JuiceBar\layouts\partials\svg.html.
