@@ -3,7 +3,6 @@ languageCode = 'en-us'
 theme = "JuiceBar"
 title = "Denney's Blog"
 
-
 [params]
 author = "Y3un9vj"
 description = "My site description"
@@ -35,13 +34,13 @@ tag = "tags"
 
 # To add a new navigation link
 [[menu.main]]
-name = "文章"
+name = "Archive"
 url = "/post"
 [[menu.main]]
-name = "分类"
+name = "Categories"
 url = "/categories"
 [[menu.main]]
-name = "关于"
+name = "About"
 url = "/about"
 
 # If using the giscus commenting system
