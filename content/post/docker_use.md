@@ -5,15 +5,21 @@ categories: ["notes"]
 ---
 
 ## Docker的常用命令
+
 ### 帮助命令
+
 ```shell
 docker version   # 显示docker的版本信息
 docker info      # 显示docker的系统信息，包括镜像和容器的数量
 docker 命令 --help # 帮助命令
 ```
+
 帮助文档地址：https://docs.docker.com/engine/reference/commandline/docker/
+
 ### 镜像命令
+
 **docker images 查看所有本地主机上的镜像**
+
 ```shell
 docker images
 
@@ -22,6 +28,7 @@ docker images
 -q, -quiet # 只是显示镜像id
 ```
 **docker search 搜索镜像**
+
 ```shell
 docker search mysql
 
@@ -31,22 +38,30 @@ docker search mysql
 docker search mysql --filter=STARS=3000
 ```
 **docker pull 下载镜像**
+
 ```shell
 docker pull mysql  # 默认下载最新版
 docker pull mysql:5.7   # 下载指定版本
 ```
+
 **docker rmi 删除镜像**
+
 ```shell
 docker rmi -f 镜像id # 删除指定的镜像
 docker rmi -f 镜像id 镜像id 镜像id  # 删除多个镜像
 docker rmi -f $(docker images -aq)  # 删除全部的镜像
 ```
+
 ### 容器命令
+
 **说明：我们有了镜像才可以创建容器，linux，下载一个centos镜像来测试学习**
+
 ```shell
 docker pull centos
 ```
+
 **新建容器并启动**
+
 ```shell
 docker run [可选参数] image
 
@@ -66,7 +81,9 @@ docker run -it centos /bin/bash
 ls # 查看容器内的centos，基础版本，很多命令都是不完善的
 exit  # 从容器中退出主机
 ```
+
 **列出所有运行的容器**
+
 ```shell
 docker ps [可选参数]    # 列出当前运行的容器
 
@@ -75,26 +92,35 @@ docker ps [可选参数]    # 列出当前运行的容器
 -n=?		# 显示最近？个运行的容器
 -q			# 显示容器的ID
 ```
+
 **退出容器**
+
 ```shell
 exit		# 直接容器停止并退出
 ctrl + P + Q	# 容器不停止退出 
 ```
+
 **删除容器**
+
 ```shell
 docker rm 容器ID					# 删除指定的容器，不能删除正在运行的容器，如果要强制删除：rm -f
 docker rm -f $(docker ps -aq)	# 删除所有的容器
 docker ps -a -q|xargs docker rm # 删除所有的容器
 ```
+
 **启动和停止容器**
+
 ```shell
 docker start 容器ID	# 启动容器
 docker restart 容器ID	# 重启容器
 docker stop 容器ID	# 停止当前正在运行的容器
 docker kill 容器ID	# 强制停止当前容器
 ```
+
 ### 其它常用命令
+
 **后台启动容器**
+
 ```shell
 docker run -d 镜像名
 
@@ -102,7 +128,9 @@ docker run -d 镜像名
 # 常见的坑：docker容器使用后台运行，就必须要有一个前台进程，docker发现没有应用，就会自动停止
 # nginx容器启动后，发现自己没有提供服务，就会立刻停止，就是没有程序了
 ```
+
 **查看日志**
+
 ```shell
 docker logs -tf --tail 10 容器ID # 显示容器最新的10条日志
 
@@ -110,15 +138,21 @@ docker logs -tf --tail 10 容器ID # 显示容器最新的10条日志
 -tf		# 显示日志
 --tail number	# 要显示日志的条数
 ```
+
 **查看容器中进程信息**
+
 ```shell
 docker top 容器ID
 ```
+
 **查看镜像的元数据**
+
 ```shell
 docker inspect 容器ID
 ```
+
 **进入当前正在运行的容器**
+
 ```shell
 # 我们通常容器都是使用后台方式运行的，需要进入容器，修改一些配置
 
@@ -132,7 +166,9 @@ docker attach 容器ID
 # docker exec:进入容器开启一个新的终端（常用）
 # docker attach:进入容器以前的终端，不会新创建一个终端
 ```
+
 **从容器内拷贝文件到主机上**
+
 ```shell
 docker cp 容器ID:容器内路径 目的的主机路径
 
@@ -142,8 +178,11 @@ touch /home/test.java			# 创建一个test.java文件
 exit							#退出容器或把容器切换到后台
 docker cp 3aaad441d0d6:/home/test.java /home	# 将容器内的文件拷贝到主机
 ```
+
 ### 小结
+
 ![QQ截图20210905222238](https://i.loli.net/2021/12/03/XflBUWxkgKnYSZP.png)
+
 ```shell
 attach		Attach to a running container				# 当前she1l下attach连接指定运行镜像
 bui1d		Bui1d an image from a Dockerfile			# 通过Dockerfile定制镜像
@@ -187,9 +226,13 @@ systemctl stop docker									# 停止docker服务
 systemctl restart  docker								# 重启docker服务
 systemctl daemon-reload									# 守护进程重启
 ```
+
 docker的命令是十分多的，上面我们学习的那些都是最常用的容器和镜像的命令，之后我们还会学习很多命令!
+
 ### 练习
+
 > Docker部署Nginx
+
 ```shell
 # 1.搜索Nginx镜像
 docker search nginx			# 也可到docker hub搜索：https://hub.docker.com/
@@ -211,10 +254,15 @@ curl localhost:3344
 docker exec -it 容器ID /bin/bash
 
 ```
+
 端口暴露的概念：
+
 ![QQ截图20210906085920](https://i.loli.net/2021/12/03/kKUipesJcZmbDo7.png)
+
 思考问题:我们每次改动nginx配置文件，都需要进入容器内部?十分的麻烦，我要是可以在容器外部提供一个映射路径，达到在容器外部修改文件，容器内部就可以自动修改? -v 数据卷!
+
 > Docker部署Tomcat
+
 ```shell
 # 官方的使用
 docker run -it --rm tomcat:9.0
@@ -240,12 +288,17 @@ cp -r webapps.dist/* webapps
 
 # 再次测试访问，可以访问
 ```
+
 思考问题:我们以后要部署项目，如果每次都要进入容器是不是十分麻烦?我要是可以在容器外部提供一个映射路径，webapps ,我们在外部放置项目，就自动同步到内部就好了!
+
 ### 可视化
+
 * portainer
+
 ```shell
 docker run -d -p 8088:9000 --restart=always -v /var/run/docker.sock:/var/run/docker.sock --privileged=true portainer/portainer
 ```
+
 * Rancher（CI/CD再用）
 
 **什么是portainer**
@@ -253,7 +306,11 @@ docker run -d -p 8088:9000 --restart=always -v /var/run/docker.sock:/var/run/doc
 Docker图形化界面管理工具，提供一个后台面板供我们操作
 
 测试访问，登录：
+
 ![QQ截图20210906104619](https://i.loli.net/2021/12/03/diSjRQ3kBbP94VT.png)
+
 进入容器控制面板：
+
 ![QQ截图20210906104735](https://i.loli.net/2021/12/03/cSY78IbKtdVoCMj.png)
+
 可视化面板平时一般不使用，可以自己玩玩

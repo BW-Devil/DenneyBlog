@@ -2,6 +2,7 @@ baseURL = 'https://devilwords.com'
 languageCode = 'en-us'
 theme = "JuiceBar"
 title = "Denney's Blog"
+enableEmoji = true
 
 [params]
 author = "Y3un9vj"
