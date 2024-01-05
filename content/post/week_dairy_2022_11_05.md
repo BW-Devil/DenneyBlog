@@ -1,5 +1,5 @@
 ---
-title: "周记 - 算命浅见"
+title: "周记 - 国学浅悟"
 date: 2022-11-05T23:20:53+08:00
 categories: ["life"]
 ---
@@ -13,8 +13,6 @@ categories: ["life"]
 * 机缘巧合来到齐安盘古，工作了两天感觉还不错，唯一不好的就是没食堂。
 * 学习了使用adb、tcpdump进行手机抓包，tshark、parse-pcap进行流量数据解析。
 * 学习了多进程爬虫。
-
-![](https://s2.loli.net/2022/11/06/gcYnLyBvEoDwTks.jpg)
 
 ## 反思忏悔
 
